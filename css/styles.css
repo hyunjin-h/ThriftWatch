@@ -3692,7 +3692,30 @@ nav ul li a.active {
   border-radius: 12px; /* 라운드 박스의 모서리를 둥글게 설정 */
   /* padding: 5px 10px; 버튼 내부 여백 설정 */
 }
-
+.cc {
+  display:flex;
+}
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 30rem;
+  height: 0.3rem;
+  background-color: #000;
+  border-radius: 1rem;
+  border-color: #000;
+}
+.ii {
+  flex: 1;
+  /* Additional styling for the items */
+  padding: 10px;
+  margin: 5px;
+}
 .nav-tabs {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: #dee2e6;

@@ -13,17 +13,16 @@ let maxDay; // 최대값을 가진 요일
 let maxValue = 0; // 최대값
 
 let amt, startColor, newColor,CColor;
-let starImg; // 별표 이미지
+let starImage; // 별표 이미지
 let sum = 0;
 let today;
 function preload() {
-  table = loadTable('../data/shopping_on.csv', 'csv', 'header');
-  starImg = loadImage('../data/star.png'); // 별표 이미지 파일 경로로 변경
-  font=loadFont('../data/NanumSquare_acR.ttf');
+  table = loadTable('data/shopping_on.csv', 'csv', 'header');
+  starImg = loadImage('data/star.png'); // 별표 이미지 파일 경로로 변경
+  font=loadFont('data/NanumSquare_acR.ttf');
 }
 function setup() {
-  let canvas=createCanvas(800, 500);
-  canvas.parent('#visual1');
+  createCanvas(800, 500);
  
   startColor = color(245,153,0);
   newColor = color(255,230,175);
@@ -45,7 +44,7 @@ function setup() {
   for (let day in summedData) {
     sum += summedData[day];
   }
-  console.log(sum)
+
 
 }
 function draw(){
@@ -118,7 +117,7 @@ function draw(){
   textAlign(CENTER, BOTTOM);
   textSize(18);
   text('최대', maxBarX + barWidth / 2+10, y - maxBarHeight - 10);
-  image(starImg, maxBarX + (barWidth) / 2 +30, y - maxBarHeight - 40, 30,30);
+  image(starImg, maxBarX + (barWidth) / 2 +30, y - maxBarHeight - 35, 25,25);
 
 
   textAlign(CENTER, TOP);
